@@ -1,0 +1,374 @@
+Delivered-To: akhbh1995@gmail.com
+Received: by 2002:adf:f944:0:0:0:0:0 with SMTP id q4csp167348wrr;
+        Thu, 22 Sep 2022 23:00:25 -0700 (PDT)
+X-Received: by 2002:a63:90c4:0:b0:439:6693:ef41 with SMTP id a187-20020a6390c4000000b004396693ef41mr6146760pge.621.1663912824903;
+        Thu, 22 Sep 2022 23:00:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1663912824; cv=none;
+        d=google.com; s=arc-20160816;
+        b=rf642cr78W7idA0oUZcdvnwwhWOVEmEPbbBgS6Lkzcyvh5gwzRtRQPAzi6hyRmFUPX
+         vxMjfV8wcYEbqojVuIhyVovfyNlSaa/tJGuI+k6md5XS+ZsegwceCHgq86jmIaRk8K+O
+         VcqaLqQYcimvkavlyeEPL15qz/QvXnDLcA14ws/50+D1TUwqRFf/tWuBwg0NHvoT+8Pk
+         vcbf7mOzOc7fiH+teXy3xhWc7/wQtd9LZnNS+IgOx0IRkNuju3npS2H6en/PjR2KTYn1
+         i0J5/+vbiI0At2Q9nkqGjmdg0WLaCOkpaCSO/9iCiFEr86NB4sQWU+TEfX0OwAVG4SII
+         TGEw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=FfjMODUMxgdXd826/BHds152XBweR50YRYpKsZ1Kyr0=;
+        b=LKePc2Qb5E9QBDILnEv8Z8Tcyv845AV0uQqhdvLMq9JGoQNqrk2lx6zLy1gku1QusP
+         n/QmjTOqJtOBnWXC8qID1xQ1HM3e+JBtdQy3DspiSfbiyhR7DjCqXJz678SG/77oiQL0
+         gOjyEnpYSzajk+o+eot1dD5juxUN+MLYd9hY/SPLi3h67tdCWPoAX4XxaJtnE20MG8LV
+         MdTGWqjNzs1cP4Fb+SSANR8vMJGmn385O3NAPGMEkOwMLqNccy8GrIxOEFzzA7HT1k1X
+         Xfw/PkbxXV/gxRvs70RRfQBWHq17gVsk7LGWi4ms8p11xluUQwKvLbao15/BY65P82C0
+         rRog==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=DgJ8aWY7;
+       spf=pass (google.com: domain of irfanakhadeeja.futura@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=irfanakhadeeja.futura@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <irfanakhadeeja.futura@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id u16-20020aa78390000000b0053e940d6298sor4368934pfm.4.2022.09.22.23.00.24
+        (Google Transport Security);
+        Thu, 22 Sep 2022 23:00:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of irfanakhadeeja.futura@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=DgJ8aWY7;
+       spf=pass (google.com: domain of irfanakhadeeja.futura@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=irfanakhadeeja.futura@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date;
+        bh=FfjMODUMxgdXd826/BHds152XBweR50YRYpKsZ1Kyr0=;
+        b=DgJ8aWY7v0GO1Bz6wO/XBhFJRbh9LVq6snqpMotH5qX/5Z/+/kGgX1NzmySNgn8/Yz
+         Pf8xRxnFN/xh+Hr8KDXtwJ05dmh7ahv+S/ltcmo+g9tA+RN+LEvJL70wrwj95sQA/uuz
+         ywwibfPepc6+YbvESEBCFGx2YIwwQ0HLosTrsO0SHqoRAYZscm8FxjRRJPGxjHii98Gt
+         m7EWAeHNfVoCU/fVmvJl6+59NoAOIjoVSwWbErdOUZvTSEY55xcJWZVgbrd4hiTTfYyU
+         /pJwSt5X9rnB93yzRhjD58LnCiuvQ1GALUwntxfwifjwItJLFXfriQH+OULfMtzjNEFc
+         vwAw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date;
+        bh=FfjMODUMxgdXd826/BHds152XBweR50YRYpKsZ1Kyr0=;
+        b=FaUyyGy//qhIhYb/X9o7ljrLtnPtMyCWu5T+XBAh7jp+uuIYNYb1wcgjEGGI6AYJb2
+         I4dYcIonkbVuuQndsSv8GWzS7ZP6uIqbF9IdYZuMbqjb2y2FdKVgMzPEC+m5nJmFabJG
+         77IW4WmG6fzbT/o6tOjs1mFx410ZyWwGlYD5Z9kgXERqNmtkVIhTz/Uap1vN/j1t6Grp
+         0R1HQeeZDWncjm6qYEatfsYBSMllQOgnWGteweRcUaDb6zpf85NX2oCGJhLp5cLoCIAk
+         15d1jAKdDwstTN8Z5tcIMIrMJ3+Bd8xUy4KZaa1fULarTot7mGF4ROFYc6QIxlXuasfR
+         Y5AA==
+X-Gm-Message-State: ACrzQf38z24q6qok8NrWPRQcsDQWKovfLCaKMg54B1prfii1r/xXE6v8
+	S3CB7WX7gtqlqzhWHGx0M5KjgP+4T+jWuZ4UJLVozIRKcvg=
+X-Google-Smtp-Source: AMsMyM6hBBoTbu4pShmWKcKSWsb0+2LNXtI1ITsm6RJBvLAGdOdcba1PF+7B4rDfwjjn/Ak8N2yE0ZI7oWU2T1P3Lvo=
+X-Received: by 2002:aa7:888d:0:b0:538:328b:2ffb with SMTP id
+ z13-20020aa7888d000000b00538328b2ffbmr7431693pfe.82.1663912823823; Thu, 22
+ Sep 2022 23:00:23 -0700 (PDT)
+MIME-Version: 1.0
+From: Irfana Khadheeja <irfanakhadeeja.futura@gmail.com>
+Date: Fri, 23 Sep 2022 11:30:12 +0530
+Message-ID: <CAJCTRL2AyWLNztd_b55DChRrfmbwtHLP21uPoXWHSBH9+TyhRw@mail.gmail.com>
+Subject: python- List practice questions
+To: anuradhakrishnanav2002@gmail.com, vishnupriyavijayan79@gmail.com, 
+	akhbh1995@gmail.com, 01ramsheena@gmail.com, roshnatnbr@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000cd215f05e951e4fb"
+
+--000000000000cd215f05e951e4fb
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+   -
+
+   Python program to interchange first and last elements in a list
+   -
+
+   Python program to swap two elements in a list
+   -
+
+   Python =E2=80=93 Swap elements in String list
+   -
+
+   Maximum of two numbers in Python
+   -
+
+   Minimum of two numbers in Python
+   -
+
+   Python | Reversing a List
+   -
+
+   Python | Count occurrences of an element in a list
+   -
+
+   Python Program to find sum and average of List in Python
+   -
+
+   Python | Sum of number digits in List
+   -
+
+   Python | Multiply all numbers in the list
+   -
+
+   Python program to find smallest number in a list
+   -
+
+   Python program to find largest number in a list
+   -
+
+   Python program to find second largest number in a list
+   -
+
+   Python program to print even numbers in a list
+   -
+
+   Python program to print odd numbers in a List
+   -
+
+   Python program to print all even numbers in a range
+   -
+
+   Python program to print all odd numbers in a range
+   -
+
+   Python program to count Even and Odd numbers in a List
+   -
+
+   Python program to print positive numbers in a list
+   -
+
+   Python program to print negative numbers in a list
+   -
+
+   Python program to print all positive numbers in a range
+   -
+
+   Python program to print all negative numbers in a range
+   -
+
+   Python program to count positive and negative numbers in a list
+   -
+
+   Remove multiple elements from a list in Python
+   -
+
+   Python | Remove empty tuples from a list
+   -
+
+   Python | Program to print duplicates from a list of integers
+
+--000000000000cd215f05e951e4fb
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><span id=3D"gmail-docs-internal-guid-610cfa36-7fff-64ac-e0=
+50-6eacbab78d84"><ul style=3D"margin-top:0px;margin-bottom:0px"><li dir=3D"=
+ltr" style=3D"list-style-type:disc;font-size:13pt;font-family:Arial;color:r=
+gb(204,204,204);background-color:transparent;font-variant-numeric:normal;fo=
+nt-variant-east-asian:normal;vertical-align:baseline;white-space:pre;margin=
+-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;background-color:rgb(=
+19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"presentation"><span sty=
+le=3D"font-size:13pt;background-color:transparent;font-variant-numeric:norm=
+al;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-w=
+rap">Python program to interchange first and last elements in a list</span>=
+</p></li><li dir=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;font-=
+family:Arial;color:rgb(204,204,204);background-color:transparent;font-varia=
+nt-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;wh=
+ite-space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;b=
+ackground-color:rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"pre=
+sentation"><span style=3D"font-size:13pt;background-color:transparent;font-=
+variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseli=
+ne;white-space:pre-wrap">Python program to swap two elements in a list</spa=
+n></p></li><li dir=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;fon=
+t-family:Arial;color:rgb(204,204,204);background-color:transparent;font-var=
+iant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;=
+white-space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896=
+;background-color:rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"p=
+resentation"><span style=3D"font-size:13pt;background-color:transparent;fon=
+t-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:base=
+line;white-space:pre-wrap">Python =E2=80=93 Swap elements in String list</s=
+pan></p></li><li dir=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;f=
+ont-family:Arial;color:rgb(204,204,204);background-color:transparent;font-v=
+ariant-numeric:normal;font-variant-east-asian:normal;vertical-align:baselin=
+e;white-space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.8=
+96;background-color:rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D=
+"presentation"><span style=3D"font-size:13pt;background-color:transparent;f=
+ont-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:ba=
+seline;white-space:pre-wrap">Maximum of two numbers in Python</span></p></l=
+i><li dir=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;font-family:=
+Arial;color:rgb(204,204,204);background-color:transparent;font-variant-nume=
+ric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-spa=
+ce:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;backgrou=
+nd-color:rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"presentati=
+on"><span style=3D"font-size:13pt;background-color:transparent;font-variant=
+-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;whit=
+e-space:pre-wrap">Minimum of two numbers in Python</span></p></li><li dir=
+=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;font-family:Arial;col=
+or:rgb(204,204,204);background-color:transparent;font-variant-numeric:norma=
+l;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre;ma=
+rgin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;background-color:=
+rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"presentation"><span=
+ style=3D"font-size:13pt;background-color:transparent;font-variant-numeric:=
+normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:p=
+re-wrap">Python | Reversing a List</span></p></li><li dir=3D"ltr" style=3D"=
+list-style-type:disc;font-size:13pt;font-family:Arial;color:rgb(204,204,204=
+);background-color:transparent;font-variant-numeric:normal;font-variant-eas=
+t-asian:normal;vertical-align:baseline;white-space:pre;margin-left:18pt"><p=
+ dir=3D"ltr" style=3D"line-height:1.896;background-color:rgb(19,20,23);marg=
+in-top:0pt;margin-bottom:0pt" role=3D"presentation"><span style=3D"font-siz=
+e:13pt;background-color:transparent;font-variant-numeric:normal;font-varian=
+t-east-asian:normal;vertical-align:baseline;white-space:pre-wrap">Python | =
+Count occurrences of an element in a list</span></p></li><li dir=3D"ltr" st=
+yle=3D"list-style-type:disc;font-size:13pt;font-family:Arial;color:rgb(204,=
+204,204);background-color:transparent;font-variant-numeric:normal;font-vari=
+ant-east-asian:normal;vertical-align:baseline;white-space:pre;margin-left:1=
+8pt"><p dir=3D"ltr" style=3D"line-height:1.896;background-color:rgb(19,20,2=
+3);margin-top:0pt;margin-bottom:0pt" role=3D"presentation"><span style=3D"f=
+ont-size:13pt;background-color:transparent;font-variant-numeric:normal;font=
+-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap">Py=
+thon Program to find sum and average of List in Python</span></p></li><li d=
+ir=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;font-family:Arial;c=
+olor:rgb(204,204,204);background-color:transparent;font-variant-numeric:nor=
+mal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre;=
+margin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;background-colo=
+r:rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"presentation"><sp=
+an style=3D"font-size:13pt;background-color:transparent;font-variant-numeri=
+c:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space=
+:pre-wrap">Python | Sum of number digits in List</span></p></li><li dir=3D"=
+ltr" style=3D"list-style-type:disc;font-size:13pt;font-family:Arial;color:r=
+gb(204,204,204);background-color:transparent;font-variant-numeric:normal;fo=
+nt-variant-east-asian:normal;vertical-align:baseline;white-space:pre;margin=
+-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;background-color:rgb(=
+19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"presentation"><span sty=
+le=3D"font-size:13pt;background-color:transparent;font-variant-numeric:norm=
+al;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-w=
+rap">Python | Multiply all numbers in the list</span></p></li><li dir=3D"lt=
+r" style=3D"list-style-type:disc;font-size:13pt;font-family:Arial;color:rgb=
+(204,204,204);background-color:transparent;font-variant-numeric:normal;font=
+-variant-east-asian:normal;vertical-align:baseline;white-space:pre;margin-l=
+eft:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;background-color:rgb(19=
+,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"presentation"><span style=
+=3D"font-size:13pt;background-color:transparent;font-variant-numeric:normal=
+;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wra=
+p">Python program to find smallest number in a list</span></p></li><li dir=
+=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;font-family:Arial;col=
+or:rgb(204,204,204);background-color:transparent;font-variant-numeric:norma=
+l;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre;ma=
+rgin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;background-color:=
+rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"presentation"><span=
+ style=3D"font-size:13pt;background-color:transparent;font-variant-numeric:=
+normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:p=
+re-wrap">Python program to find largest number in a list</span></p></li><li=
+ dir=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;font-family:Arial=
+;color:rgb(204,204,204);background-color:transparent;font-variant-numeric:n=
+ormal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pr=
+e;margin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;background-co=
+lor:rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"presentation"><=
+span style=3D"font-size:13pt;background-color:transparent;font-variant-nume=
+ric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-spa=
+ce:pre-wrap">Python program to find second largest number in a list</span><=
+/p></li><li dir=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;font-f=
+amily:Arial;color:rgb(204,204,204);background-color:transparent;font-varian=
+t-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;whi=
+te-space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;ba=
+ckground-color:rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"pres=
+entation"><span style=3D"font-size:13pt;background-color:transparent;font-v=
+ariant-numeric:normal;font-variant-east-asian:normal;vertical-align:baselin=
+e;white-space:pre-wrap">Python program to print even numbers in a list</spa=
+n></p></li><li dir=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;fon=
+t-family:Arial;color:rgb(204,204,204);background-color:transparent;font-var=
+iant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;=
+white-space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896=
+;background-color:rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"p=
+resentation"><span style=3D"font-size:13pt;background-color:transparent;fon=
+t-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:base=
+line;white-space:pre-wrap">Python program to print odd numbers in a List</s=
+pan></p></li><li dir=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;f=
+ont-family:Arial;color:rgb(204,204,204);background-color:transparent;font-v=
+ariant-numeric:normal;font-variant-east-asian:normal;vertical-align:baselin=
+e;white-space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.8=
+96;background-color:rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D=
+"presentation"><span style=3D"font-size:13pt;background-color:transparent;f=
+ont-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:ba=
+seline;white-space:pre-wrap">Python program to print all even numbers in a =
+range</span></p></li><li dir=3D"ltr" style=3D"list-style-type:disc;font-siz=
+e:13pt;font-family:Arial;color:rgb(204,204,204);background-color:transparen=
+t;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align=
+:baseline;white-space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"line-he=
+ight:1.896;background-color:rgb(19,20,23);margin-top:0pt;margin-bottom:0pt"=
+ role=3D"presentation"><span style=3D"font-size:13pt;background-color:trans=
+parent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-=
+align:baseline;white-space:pre-wrap">Python program to print all odd number=
+s in a range</span></p></li><li dir=3D"ltr" style=3D"list-style-type:disc;f=
+ont-size:13pt;font-family:Arial;color:rgb(204,204,204);background-color:tra=
+nsparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertica=
+l-align:baseline;white-space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"=
+line-height:1.896;background-color:rgb(19,20,23);margin-top:0pt;margin-bott=
+om:0pt" role=3D"presentation"><span style=3D"font-size:13pt;background-colo=
+r:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;ve=
+rtical-align:baseline;white-space:pre-wrap">Python program to count Even an=
+d Odd numbers in a List</span></p></li><li dir=3D"ltr" style=3D"list-style-=
+type:disc;font-size:13pt;font-family:Arial;color:rgb(204,204,204);backgroun=
+d-color:transparent;font-variant-numeric:normal;font-variant-east-asian:nor=
+mal;vertical-align:baseline;white-space:pre;margin-left:18pt"><p dir=3D"ltr=
+" style=3D"line-height:1.896;background-color:rgb(19,20,23);margin-top:0pt;=
+margin-bottom:0pt" role=3D"presentation"><span style=3D"font-size:13pt;back=
+ground-color:transparent;font-variant-numeric:normal;font-variant-east-asia=
+n:normal;vertical-align:baseline;white-space:pre-wrap">Python program to pr=
+int positive numbers in a list</span></p></li><li dir=3D"ltr" style=3D"list=
+-style-type:disc;font-size:13pt;font-family:Arial;color:rgb(204,204,204);ba=
+ckground-color:transparent;font-variant-numeric:normal;font-variant-east-as=
+ian:normal;vertical-align:baseline;white-space:pre;margin-left:18pt"><p dir=
+=3D"ltr" style=3D"line-height:1.896;background-color:rgb(19,20,23);margin-t=
+op:0pt;margin-bottom:0pt" role=3D"presentation"><span style=3D"font-size:13=
+pt;background-color:transparent;font-variant-numeric:normal;font-variant-ea=
+st-asian:normal;vertical-align:baseline;white-space:pre-wrap">Python progra=
+m to print negative numbers in a list</span></p></li><li dir=3D"ltr" style=
+=3D"list-style-type:disc;font-size:13pt;font-family:Arial;color:rgb(204,204=
+,204);background-color:transparent;font-variant-numeric:normal;font-variant=
+-east-asian:normal;vertical-align:baseline;white-space:pre;margin-left:18pt=
+"><p dir=3D"ltr" style=3D"line-height:1.896;background-color:rgb(19,20,23);=
+margin-top:0pt;margin-bottom:0pt" role=3D"presentation"><span style=3D"font=
+-size:13pt;background-color:transparent;font-variant-numeric:normal;font-va=
+riant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap">Pytho=
+n program to print all positive numbers in a range</span></p></li><li dir=
+=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;font-family:Arial;col=
+or:rgb(204,204,204);background-color:transparent;font-variant-numeric:norma=
+l;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre;ma=
+rgin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;background-color:=
+rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"presentation"><span=
+ style=3D"font-size:13pt;background-color:transparent;font-variant-numeric:=
+normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:p=
+re-wrap">Python program to print all negative numbers in a range</span></p>=
+</li><li dir=3D"ltr" style=3D"list-style-type:disc;font-size:13pt;font-fami=
+ly:Arial;color:rgb(204,204,204);background-color:transparent;font-variant-n=
+umeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-=
+space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"line-height:1.896;backg=
+round-color:rgb(19,20,23);margin-top:0pt;margin-bottom:0pt" role=3D"present=
+ation"><span style=3D"font-size:13pt;background-color:transparent;font-vari=
+ant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;w=
+hite-space:pre-wrap">Python program to count positive and negative numbers =
+in a list</span></p></li><li dir=3D"ltr" style=3D"list-style-type:disc;font=
+-size:13pt;font-family:Arial;color:rgb(204,204,204);background-color:transp=
+arent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-a=
+lign:baseline;white-space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"lin=
+e-height:1.896;background-color:rgb(19,20,23);margin-top:0pt;margin-bottom:=
+0pt" role=3D"presentation"><span style=3D"font-size:13pt;background-color:t=
+ransparent;font-variant-numeric:normal;font-variant-east-asian:normal;verti=
+cal-align:baseline;white-space:pre-wrap">Remove multiple elements from a li=
+st in Python</span></p></li><li dir=3D"ltr" style=3D"list-style-type:disc;f=
+ont-size:13pt;font-family:Arial;color:rgb(204,204,204);background-color:tra=
+nsparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertica=
+l-align:baseline;white-space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"=
+line-height:1.896;background-color:rgb(19,20,23);margin-top:0pt;margin-bott=
+om:0pt" role=3D"presentation"><span style=3D"font-size:13pt;background-colo=
+r:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;ve=
+rtical-align:baseline;white-space:pre-wrap">Python | Remove empty tuples fr=
+om a list</span></p></li><li dir=3D"ltr" style=3D"list-style-type:disc;font=
+-size:13pt;font-family:Arial;color:rgb(204,204,204);background-color:transp=
+arent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-a=
+lign:baseline;white-space:pre;margin-left:18pt"><p dir=3D"ltr" style=3D"lin=
+e-height:1.896;background-color:rgb(19,20,23);margin-top:0pt;margin-bottom:=
+36pt" role=3D"presentation"><span style=3D"font-size:13pt;background-color:=
+transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vert=
+ical-align:baseline;white-space:pre-wrap">Python | Program to print duplica=
+tes from a list of integers</span></p></li></ul></span></div>
+
+--000000000000cd215f05e951e4fb--

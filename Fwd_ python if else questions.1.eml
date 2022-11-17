@@ -1,0 +1,178 @@
+Delivered-To: akhbh1995@gmail.com
+Received: by 2002:adf:f944:0:0:0:0:0 with SMTP id q4csp124045wrr;
+        Fri, 16 Sep 2022 22:59:26 -0700 (PDT)
+X-Received: by 2002:a17:907:e8c:b0:773:69e4:de06 with SMTP id ho12-20020a1709070e8c00b0077369e4de06mr5869984ejc.423.1663394366004;
+        Fri, 16 Sep 2022 22:59:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1663394366; cv=none;
+        d=google.com; s=arc-20160816;
+        b=e3PWBEan23MGSpBmekVxFbr15zQj1ZyqXhjckUkj/h401OU+eb3qyfwFG2yzQImL5L
+         2DohfkLtY867qSABWSwOpEsnBVZitRoRBN9ztqBOWlTgg3sKaDZH1q9MU0TYdc/ozYcS
+         dFxSOm33GwqOqlyKJfIXEVkbxzdkrILWG70usPbijetbRSx+/d1begSqpPXYm9Urv8qM
+         T+bCgCdRsdkmTXjsGUEwzVXal006lIIVFkQ4TTizm0QoFhtatF138LqlpMJErlDzyVU+
+         YexhxyXv5PUfG1HpvWgQYhlnW1tO+hC+AhvQGZxOFW28m+roiC9GuI4DSlF2C3dyyedD
+         lHSg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=azODmZPmYl9mIMRXKU+tM9d+NKsNfvXmB+TsNmwTpLU=;
+        b=rW+YR+JQR0f6v5gFTDnpxPt8jGHOrTCctP2A03fiFkbNg1pBJd1Ce17jXOIN5KpP7V
+         XftnkYDG0l6aeoX6oCqlRaSin1VLDaeBP+ffLte3bSqPsR5HOsPFAnd30VkA1ry7zGxP
+         G0xTr+qSkZW9MPAK9Bc1NUscHo8ySN1ck2rhoBGd7Q31iTqsdBk1ZdXupA63C5Lhajva
+         S0aj4A5M1HJ7nTUfDGA18Xv56uqHu/dbSxyMmjTXBA0Ago0OK0cLPbXGaEUsIwr20GnQ
+         KvAkCEkcX/BHUieK4kJEmnevMl0ylun3bC5AykiSltQaSo7EXtMwgsDKJ+X4gtYEUflN
+         soag==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=NRAI2wi7;
+       spf=pass (google.com: domain of anuradhakrishnanav2002@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=anuradhakrishnanav2002@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <anuradhakrishnanav2002@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id v5-20020a17090606c500b007306cd9e4e0sor9177234ejb.58.2022.09.16.22.59.25
+        for <akhbh1995@gmail.com>
+        (Google Transport Security);
+        Fri, 16 Sep 2022 22:59:25 -0700 (PDT)
+Received-SPF: pass (google.com: domain of anuradhakrishnanav2002@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=NRAI2wi7;
+       spf=pass (google.com: domain of anuradhakrishnanav2002@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=anuradhakrishnanav2002@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date;
+        bh=azODmZPmYl9mIMRXKU+tM9d+NKsNfvXmB+TsNmwTpLU=;
+        b=NRAI2wi73ep6A6rOB+fFeWkksmdjUsCg/03fyWr3vDzJe+3b4XjLwAKJb08kARSe1e
+         wDhlmNTaUp9xQtBbkDgTdo2+7z6UEPF9XCdYvuKRQDkqbWFRrNxjpHuHibj2bXNuLpkc
+         1CUIgT6XRoEBsiS65+MCJndyisgz4v4bFj6XLUb68lp55IQGWBvP6ehIYCte6ELFPtJ3
+         Lefhu0F0T8s6f2qna7gpQlNolgf5WX84osecZ2YUJRMneXNURT8bzIBslI/AiB5rWesj
+         MU2oGBPyjThjiCHtmtO9ZAkOMBmzEC6EHxvM9H6uGhiI1uk92IJntrDuSCy5FsR8Cmkl
+         khaQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date;
+        bh=azODmZPmYl9mIMRXKU+tM9d+NKsNfvXmB+TsNmwTpLU=;
+        b=tfJp2OyCCjQreBnXR3QduTnEZAuVFOHR6hlwM3aHxsZ+0NFMLssnlVkQdVpKk4nT89
+         Uye11moO6lxlNzCmtTF/8rN5QhlAMQMY1aCZSq9A5X4x0cK7oshMG2rYNT6KiCD7q0Ly
+         d3LcLm+PFJ5t7smizjVZTdZN53buHQ3s32nsNECCtw3C4waMasquwtgewJWeHs6qWMES
+         n0XtFxe/W+g6D6ulzJNQvTP1yCVv3yX3wOGPlG8+2KItqVusAkoQ5Skwc26AzQ/d1VJr
+         oDEghYX/vjFVthO5KJNc4iJW1y87x8RoCVmP2kyYMM27f2pAu9LBkEJh3HyE38oOTn5d
+         xIoQ==
+X-Gm-Message-State: ACrzQf3qBOfEm/1L9jycpRxwQwc64eWSep8vM36cTnGstjieZhiWwlmH
+	54tf9B3nfeuqlj+QQz/V3L6eVIhBSUMO6FUVaAn6iKd7
+X-Google-Smtp-Source: AMsMyM7afdKvw4rf7IoOca4KRfn6HLQRexQBSOLUhNIAJqge8A/8hG6AfCpT+NJ/oVAHi7mtu9lJbs+Bov+itZX72Ig=
+X-Received: by 2002:a17:906:fe09:b0:73d:90ae:f801 with SMTP id
+ wy9-20020a170906fe0900b0073d90aef801mr5431913ejb.699.1663394365474; Fri, 16
+ Sep 2022 22:59:25 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAJCTRL1Jqvq3EX0h+P0xqn17PkZ9a6uMPbxQ=rKA-VWJitwz1g@mail.gmail.com>
+ <CAJCTRL0jdwaDwezF2hM3iYqzZTAvo1=iSYoYTh28a6qYbkZ+MQ@mail.gmail.com> <CAEr5OPZw4Ej_QKn+kvS6Bxxrt3BsQc=L=utq1uHtJb+V8CXHgQ@mail.gmail.com>
+In-Reply-To: <CAEr5OPZw4Ej_QKn+kvS6Bxxrt3BsQc=L=utq1uHtJb+V8CXHgQ@mail.gmail.com>
+From: Anu Radhakrishnan AV <anuradhakrishnanav2002@gmail.com>
+Date: Sat, 17 Sep 2022 11:28:12 +0530
+Message-ID: <CAORiSZeNg5kQHs0a-gAC4GEGX_NRLFcKO6QA1cLwvFa=zeuHmA@mail.gmail.com>
+Subject: Fwd: python if else questions.
+To: "akhbh1995@gmail.com" <akhbh1995@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000004690c505e8d92ed6"
+
+--0000000000004690c505e8d92ed6
+Content-Type: text/plain; charset="UTF-8"
+
+---------- Forwarded message ---------
+From: Vishnupriya k k <vishnupriyavijayan79@gmail.com>
+Date: Fri, 16 Sept 2022 at 14:27
+Subject: Fwd: python if else questions.
+To: <01ramsheena@gmail.com>, <roshnatnbr@gmail.com>, <
+anuradhakrishnanav2002@gmail.com>
+
+
+
+
+---------- Forwarded message ---------
+From: Irfana Khadheeja <irfanakhadeeja.futura@gmail.com>
+Date: Fri, Sep 16, 2022 at 2:22 PM
+Subject: Re: python if else questions.
+To: <vishnupriyavijayan79@gmail.com>
+
+
+python tasks to complete.
+
+1. write a program to check weather a individual is eligible for voting?
+2.write a program to check the last digit of the user entered number is
+divisible by 3 or not.?
+3.program to display grades when user enter their marks.
+4.leap year or not
+5. month display jan- dec
+6.check whether entered character is a vowel or consonant.
+
+On Fri, Sep 16, 2022 at 1:49 PM Irfana Khadheeja <
+irfanakhadeeja.futura@gmail.com> wrote:
+
+> 1.Write an if statement that asks for the user's name via input()
+> function. If the name is "Bond" make it print "Welcome on board 007."
+> Otherwise make it print "Good morning NAME". (Replace Name with user's name)
+>
+> 2.Write a program named to print the decimal part.the decimal part of a
+> number. If decimal part is zero function should return this string:
+> "INTEGER".
+> 3. print the week days on users choice
+> 4.write a program to print the price of a product when quantity is
+> entered. price range  between 100-1000.
+>
+
+--0000000000004690c505e8d92ed6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=
+=3D"gmail_attr">---------- Forwarded message ---------<br>From: <strong cla=
+ss=3D"gmail_sendername" dir=3D"auto">Vishnupriya k k</strong> <span dir=3D"=
+auto">&lt;<a href=3D"mailto:vishnupriyavijayan79@gmail.com">vishnupriyavija=
+yan79@gmail.com</a>&gt;</span><br>Date: Fri, 16 Sept 2022 at 14:27<br>Subje=
+ct: Fwd: python if else questions.<br>To:  &lt;<a href=3D"mailto:01ramsheen=
+a@gmail.com">01ramsheena@gmail.com</a>&gt;,  &lt;<a href=3D"mailto:roshnatn=
+br@gmail.com">roshnatnbr@gmail.com</a>&gt;,  &lt;<a href=3D"mailto:anuradha=
+krishnanav2002@gmail.com">anuradhakrishnanav2002@gmail.com</a>&gt;<br></div=
+><br><br><div dir=3D"ltr"><br><br><div class=3D"gmail_quote"><div dir=3D"lt=
+r" class=3D"gmail_attr">---------- Forwarded message ---------<br>From: <st=
+rong class=3D"gmail_sendername" dir=3D"auto">Irfana Khadheeja</strong> <spa=
+n dir=3D"auto">&lt;<a href=3D"mailto:irfanakhadeeja.futura@gmail.com" targe=
+t=3D"_blank">irfanakhadeeja.futura@gmail.com</a>&gt;</span><br>Date: Fri, S=
+ep 16, 2022 at 2:22 PM<br>Subject: Re: python if else questions.<br>To:  &l=
+t;<a href=3D"mailto:vishnupriyavijayan79@gmail.com" target=3D"_blank">vishn=
+upriyavijayan79@gmail.com</a>&gt;<br></div><br><br><div dir=3D"ltr">python =
+tasks to complete.<div><br></div><div>1. write a program to check weather=
+=C2=A0a individual is eligible for voting?</div><div>2.write a program to c=
+heck the last digit of the user entered number is divisible by 3 or not.?</=
+div><div>3.program to display grades when user enter their marks.</div><div=
+>4.leap year or not</div><div>5. month display jan- dec</div><div>6.check w=
+hether entered character is a vowel or consonant.</div></div><br><div class=
+=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Fri, Sep 16, 2022=
+ at 1:49 PM Irfana Khadheeja &lt;<a href=3D"mailto:irfanakhadeeja.futura@gm=
+ail.com" target=3D"_blank">irfanakhadeeja.futura@gmail.com</a>&gt; wrote:<b=
+r></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex=
+;border-left:1px solid rgb(204,204,204);padding-left:1ex"><div dir=3D"ltr">=
+1.<span style=3D"color:rgb(51,51,51);font-family:&quot;Merriweather Sans&qu=
+ot;;font-size:14px;background-color:rgb(207,223,243)">Write an if statement=
+ that asks for the user&#39;s name via input() function. If the name is &qu=
+ot;Bond&quot; make it print &quot;Welcome on board 007.&quot; Otherwise mak=
+e it print &quot;Good morning NAME&quot;. (Replace Name with user&#39;s nam=
+e)</span><br><div><span style=3D"color:rgb(51,51,51);font-family:&quot;Merr=
+iweather Sans&quot;;font-size:14px;background-color:rgb(207,223,243)"><br><=
+/span></div><div><span style=3D"color:rgb(51,51,51);font-family:&quot;Merri=
+weather Sans&quot;;font-size:14px;background-color:rgb(207,223,243)">2.</sp=
+an><span style=3D"background-color:rgb(207,223,243);color:rgb(51,51,51);fon=
+t-family:&quot;Merriweather Sans&quot;;font-size:14px">Write a program name=
+d to print the decimal part.the decimal part of a number. If decimal part i=
+s zero function should return this string: &quot;INTEGER&quot;.</span></div=
+><div><span style=3D"background-color:rgb(207,223,243);color:rgb(51,51,51);=
+font-family:&quot;Merriweather Sans&quot;;font-size:14px">3. print the week=
+ days on users choice</span></div><div><span style=3D"background-color:rgb(=
+207,223,243);color:rgb(51,51,51);font-family:&quot;Merriweather Sans&quot;;=
+font-size:14px">4.write a program to print the price of a product when quan=
+tity is entered. price range=C2=A0 between 100-1000.</span></div></div>
+</blockquote></div>
+</div></div>
+</div></div>
+
+--0000000000004690c505e8d92ed6--

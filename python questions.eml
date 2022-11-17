@@ -1,0 +1,111 @@
+Delivered-To: akhbh1995@gmail.com
+Received: by 2002:adf:f944:0:0:0:0:0 with SMTP id q4csp969589wrr;
+        Mon, 19 Sep 2022 04:00:29 -0700 (PDT)
+X-Received: by 2002:a05:6a00:1781:b0:53a:8572:4453 with SMTP id s1-20020a056a00178100b0053a85724453mr18411151pfg.76.1663585228912;
+        Mon, 19 Sep 2022 04:00:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1663585228; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ODJqUlV8fTWv3cZfzDFEefSXYZ9DVWiZo/bMi9WHABZVn+eTB9AuoIksyyfFp4B9Cy
+         7gOsVbHZnV5agln+6K0AfDQRyMW5xqH8idIHv0NpYhGlheKjUuOJRIhmhjb43B771a9/
+         JDbki85wCsNAyyKJUddsLLxcSB77CqfU4/TbXeplo7x+Y+10Hw4NxNpFp6fbBZaYoQLJ
+         z6pSEqMgC4B2f4hJ4YSjBC8SzHsW1psp7OPlzKp3o/Gg8y+h9K4h8A7o/aVu1Lx2k8wg
+         oV2qrCI8cZKWcMuLyNC+nVJEjrzT4FgqQmXfDZvm+e5lxqyi4JYDa2TABKZcaMaJg4Ca
+         FJ3A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=WGhoFAoMA5a/fFAkkIMDBp2J2ypG6cy3KkkE9GliaR8=;
+        b=d3++8myvDqBBp5mTKkewZ01ZnjZC7aMoNnGm5BLBDjonLmAVLy4xgWlNifEjoWHO8V
+         xbjwGsJOn6QCjfUPoZofARTnvtLSGR70yljouxj8/W1CuczaT265lhm3dBNPHEXCVTta
+         PNbCRn+56EGpyWD9Rr6Dz2da7w6vuXXCWIthi1/ROvoUbi//gJrzKKPNIvDLnqI1SqtZ
+         5kJHqJB3hNTiU7VdnAv0duDqzrj5/GfGBujT79ub10iT2P1Durr0dJJqlJ4Pjv42lDXH
+         Bf4UzzccCMc2hTLNJ1tYlot6bqckNppIsfkuxJ6qrf++W+kYnn+iFhYCEDEuXYoqBUY0
+         E7mw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=OIGg1zfN;
+       spf=pass (google.com: domain of irfanakhadeeja.futura@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=irfanakhadeeja.futura@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <irfanakhadeeja.futura@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id y17-20020a17090322d100b00177e7be2ad6sor11945981plg.95.2022.09.19.04.00.28
+        (Google Transport Security);
+        Mon, 19 Sep 2022 04:00:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of irfanakhadeeja.futura@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=OIGg1zfN;
+       spf=pass (google.com: domain of irfanakhadeeja.futura@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=irfanakhadeeja.futura@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date;
+        bh=WGhoFAoMA5a/fFAkkIMDBp2J2ypG6cy3KkkE9GliaR8=;
+        b=OIGg1zfNwm1McsUm4FoUdJ7L94b0GEpbNWXguyof4rr/qLf7OUccXgU3KbumKY+btQ
+         Ai2iQVqPaeUucGPZUzG6M4uipLnZaoV7oycD0lkn+NdU1NwnIEOfQJUHAE/f7P6vFfac
+         sCbfKUk/IQAgLi27S5O85fQmI/7E6Z+6OXk5lVy5+3OnT8I2qI8x1/hi6uxbqLFkS/U6
+         Cc7h8PADirGnSSkGwCJvVl91R9cTdBOSVLxHLIJKjiERzGL5MShqtlYWfFr+I8Nf71VZ
+         BuCmbKKJ60H6mhiCpjEmY9j3kYSPtnD5co5gmA5SRWMUtPBFRRQ58SRodGnFOJFYOy5/
+         +RuA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date;
+        bh=WGhoFAoMA5a/fFAkkIMDBp2J2ypG6cy3KkkE9GliaR8=;
+        b=g0H77J2l6HGbwbmrOoAVHPkdohCD6ZfvWTvebtHB95qesBtdOQ4jtloRFQ1mz5NuAJ
+         1I6xehrLjcqcG7tZH3inL3FQqqjhfmuX4iQaQHAZBfhtBasCUMLi/Hb0sHsLBx+M7XLJ
+         T5Zk8mql1jFKxA09A20MDEFMDcnnJeE4yDv9bv2n2TQwkPNP4d7dcvdxoEyNJfcKDFAn
+         eMvMNtFJkl5Y9WFj5JqhREVBKvC5ywFe8ARPrRZhlJiQ+ThsoWTiMSBmO4ZmqMocFeS2
+         GM3obUYIAb/OGzHn+jMar4+WKMOEZt1VQfql6g9pB8qdDZyHsBXNPnIAYUjJVxWFZhGo
+         uXcA==
+X-Gm-Message-State: ACrzQf1/qpFgBRm6ouqDUX11F7s5vZYvTHeMl8HhFmxIOiziwVuzVimN
+	MzjpPgSI41RP2IWekxCMZSIMhyugNy5WUNeZdziAcqvV39SMlg==
+X-Google-Smtp-Source: AMsMyM7w3LhxEQ415Yr6c0wi+HVdYsqt2MOX3llhoNN4xXVH4CJRwZEIQ7ACfggPxhyZJVzpx7fqDJK+g9IDK8aE+BA=
+X-Received: by 2002:a17:902:8648:b0:178:1b71:c295 with SMTP id
+ y8-20020a170902864800b001781b71c295mr12237354plt.148.1663585228087; Mon, 19
+ Sep 2022 04:00:28 -0700 (PDT)
+MIME-Version: 1.0
+From: Irfana Khadheeja <irfanakhadeeja.futura@gmail.com>
+Date: Mon, 19 Sep 2022 16:30:16 +0530
+Message-ID: <CAJCTRL3PUg4NELQsT8J7MhddZix0yp2oZmuOs=mw70ZAK-R61Q@mail.gmail.com>
+Subject: python questions
+To: anuradhakrishnanav2002@gmail.com, vishnupriyavijayan79@gmail.com, 
+	akhbh1995@gmail.com, "roshnatnbr@gmail.com" <roshnatnbr@gmail.com>, 01ramsheena@gmail.com
+Content-Type: multipart/alternative; boundary="00000000000092e76205e9059e28"
+
+--00000000000092e76205e9059e28
+Content-Type: text/plain; charset="UTF-8"
+
+1.Write a program to print multiplication table of a given number
+Display numbers from -10 to -1 using for loopWrite a program to display all
+prime numbers within a range
+
+Display Fibonacci series up to 10 terms
+
+--00000000000092e76205e9059e28
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">1.<h3 id=3D"gmail-h-exercise-4-write-a-program-to-print-mu=
+ltiplication-table-of-a-given-number" style=3D"box-sizing:border-box;font-f=
+amily:Inter-Bold,system-ui,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&=
+quot;,Roboto,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;margin:3=
+0px 0px 25px;color:rgb(28,43,65);font-size:24px;background-color:rgb(254,25=
+4,254)">Write a program to print multiplication table of a given number</h3=
+><div><h3 id=3D"gmail-h-exercise-9-display-numbers-from-10-to-1-using-for-l=
+oop" style=3D"box-sizing:border-box;font-family:Inter-Bold,system-ui,-apple=
+-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,&quot;Helvetica Neue=
+&quot;,Helvetica,Arial,sans-serif;margin:30px 0px 25px;color:rgb(28,43,65);=
+font-size:24px;background-color:rgb(254,254,254)">Display numbers from -10 =
+to -1 using for loop</h3><h3 id=3D"gmail-h-exercise-11-write-a-program-to-d=
+isplay-all-prime-numbers-within-a-range" style=3D"box-sizing:border-box;fon=
+t-family:Inter-Bold,system-ui,-apple-system,BlinkMacSystemFont,&quot;Segoe =
+UI&quot;,Roboto,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;margi=
+n:30px 0px 25px;color:rgb(28,43,65);font-size:24px;background-color:rgb(254=
+,254,254)">Write a program to display all prime numbers within a range</h3>=
+</div><div><br></div><div><h3 id=3D"gmail-h-exercise-12-display-fibonacci-s=
+eries-up-to-10-terms" style=3D"box-sizing:border-box;font-family:Inter-Bold=
+,system-ui,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,&qu=
+ot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;margin:30px 0px 25px;col=
+or:rgb(28,43,65);font-size:24px;background-color:rgb(254,254,254)">Display =
+Fibonacci series up to 10 terms</h3></div></div>
+
+--00000000000092e76205e9059e28--
