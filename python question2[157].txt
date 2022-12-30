@@ -1,0 +1,48 @@
+1 List comprehensions:
+# (a) Generate positive list of numbers from a given list of integers
+# (b) Square of N numbers
+# (c) Form a list of vowels selected from a given word
+# (d) Form a list ordinal value of each element of a word (Hint: use ord() to get ordinal
+# values)
+
+
+2 Merge two dictionaries.
+
+3 to find factorial of a number
+
+4to find fibannoci series
+#using while loop
+#using for loop
+
+4 sum of all items in a list using for loop
+
+5 generate a list of four digit numbers in a given range with all their digits even and the number perfect square is perfect square
+
+6 write a program using a for loop to print the multiplication table of n, where n is entered by the user
+
+7 #display the given pyramid with the step number accepted from the user, E.g, N=4
+# 1
+# 2 4
+# 3 6 9
+# 4 8 12 16
+
+8 #write a program to print the reverse of a number [use while loop]
+
+9  Sort dictionary in ascending and descending order.
+
+10 Merge two dictionaries.
+
+11 write a program to generate all factors of a number [use while loop]
+
+12 #write a program to find whether the given number is an armstrong number or not [use while loop]
+
+13 construct following pattern using nested loop:
+ *
+# * *
+# * * *
+# * * * *
+# * * * * *
+# * * * *
+# * * *
+# * *
+# *

@@ -1,0 +1,15 @@
+1 What is stacking
+2 Bagging,Boosting
+3 Roc curve
+4 enseble  Methods
+5 F1 and F2 score
+6 l1 l2 regularization
+7 true and false positive rate
+8 matplotlib
+9 Cost function and lost function
+10  How to find k in KMEANS 
+11  What is P values
+12  Hypothesis test
+13  Scaling(featured scaling)
+14  Boxplot
+15  
